@@ -8,8 +8,8 @@ const callBack = (entries) => {
 };
 
 const options = {
-      root: container,
-      threshold: 1
+      root: container, // Parent element of target element
+      threshold: 0 // 0 = Any part of target is in the viewport, 1 = Complete target is viewable in the viewport
 };
 
 const observer = new IntersectionObserver(callBack, options);
